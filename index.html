@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Hrushikesh Portfolio</title>
+    </head>
+    <body>
+        <div class="navBar">
+            <div class="upperNavBar">
+                <div class="iconHolder" onClick='window.location="#pos1"'>
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="iconHolder" onClick='window.location="#pos2"'>
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div class="iconHolder" onClick='window.location="#pos3"'>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </div>
+            </div>
+            <div class="lowerNavBar">
+                <div class="iconHolder" onClick='window.location="#pos4"'>
+                    <i class="fa-solid fa-user-pen"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="aboutMe" id="pos1">Hrushikesh Patel</div>
+            <div class="skills" id="pos2">
+                <div class="skillUpper">Skills</div>
+                <div class="skillLower">
+                    <div
+                        class="sk1"
+                        style="font-family: 'Rajdhani', sans-serif"
+                    >
+                        C++
+                    </div>
+                    <div class="sk2"><i class="fa-brands fa-html5"></i></div>
+                    <div class="sk3"><i class="fa-brands fa-python"></i></div>
+                    <div class="sk4">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="sk5">
+                        <i class="fa-brands fa-square-js"></i>
+                    </div>
+                    <div class="sk6"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="sk7"><i class="fa-solid fa-database"></i></div>
+                </div>
+            </div>
+            <!-- c++ c python javascript html css sql  -->
+
+            <div class="project" id="pos3">
+                <div class="projectUpper">Projects</div>
+                <div class="projectLower">
+                    <div
+                        class="projectHolder"
+                        onclick="window.open('https://hrushikesh-02.github.io/weatherapp/')"
+                    >
+                        <div class="projectHolderUpper">Weather-App</div>
+                        <div class="projectHolderLower">
+                            The Weather-App is build using openweather api. The
+                            data is fetched as a json file and the necessary
+                            data is presented in a aesthetic way. The background
+                            has 4 various shades which set automatically
+                            according to the temperature.
+                        </div>
+                    </div>
+                    <div
+                        class="projectHolder"
+                        onclick="window.open('https://hrushikesh-02.github.io/resumify/')"
+                    >
+                        <div class="projectHolderUpper">Resumify</div>
+                        <div class="projectHolderLower">
+                            This is a online resume builder which is a build
+                            using nextjs and is still in engineering state. The
+                            goal is to make it easy for one to create and
+                            download a well designed resume.
+                        </div>
+                    </div>
+                    <div class="projectHolder">
+                        <div class="projectHolderUpper">Portfolio</div>
+                        <div class="projectHolderLower">
+                            The wonderfull site which your currently surfing on
+                            is build using very basic tools. The site simply
+                            shows how easy it is to devlop a minimal and
+                            asthetic website. This site showcases my skills and
+                            my work all together in one place.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact" id="pos4">
+                <div class="contactUpper">Contact Information</div>
+                <div class="contactLower">
+                    <div class="contactLhs">
+                        <div
+                            class="gmail"
+                            onclick="location.href='mailto:hrushikesh592002@gmail.com'"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div
+                            class="linkedin"
+                            onclick="window.open('https://www.linkedin.com/in/hrushi59/')"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            class="github"
+                            onclick="window.open('https://github.com/hrushikesh-02')"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="contactRhs"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
