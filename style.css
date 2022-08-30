@@ -515,22 +515,22 @@ body {
     @keyframes randime {
         0%,
         7% {
-            transform: rotateZ(0);
+            transform: rotateY(0);
         }
         15% {
-            transform: rotateZ(-10deg);
+            transform: rotateY(-20deg);
         }
         20% {
-            transform: rotateZ(10deg);
+            transform: rotateY(20deg);
         }
         25% {
-            transform: rotateZ(-10deg);
+            transform: rotateY(-20deg);
         }
         30% {
             transform: rotateY(6deg);
         }
         35% {
-            transform: rotateY(-200deg);
+            transform: rotateY(-90deg);
         }
         50% {
             color: rgb(151, 220, 127);
