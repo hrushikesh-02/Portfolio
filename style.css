@@ -5,7 +5,8 @@
     --color2: rgb(247, 255, 216);
     --color3: rgba(0, 0, 0, 0.3);
     --txtclr: black;
-    --color4: rgba(126, 96, 62, 0.8); /*navbar*/
+    --btnclr: rgba(255, 255, 255, 1);
+    --color4: rgba(126, 96, 62, 1); /*navbar*/
     /* font-family: 'Baloo Thambi 2', cursive;
     font-family: 'Cairo', sans-serif;
     font-family: 'Dosis', sans-serif;
@@ -89,17 +90,21 @@ body {
 
 .mainContainer {
     width: 96%;
+    height: 100vh;
     padding: 0%;
     margin: 0%;
     margin-left: 4%;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .aboutMe {
+    scroll-snap-align: center;
     font-family: 'MuseoModerno', cursive;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     color: var(--color1);
     flex-direction: row;
@@ -111,7 +116,8 @@ body {
 }
 
 .skills {
-    height: 90vh;
+    scroll-snap-align: center;
+    min-height: 100vh;
     padding: 3%;
     width: 94%;
     background-color: var(--color1);
@@ -253,7 +259,8 @@ body {
 }
 
 .project {
-    height: 90vh;
+    scroll-snap-align: center;
+    min-height: 100vh;
     padding: 3%;
     width: 94%;
     background-color: var(--color2);
@@ -350,7 +357,8 @@ body {
 }
 
 .contact {
-    height: 90vh;
+    scroll-snap-align: center;
+    min-height: 100vh;
     padding: 3%;
     width: 94%;
     background-color: var(--color1);
@@ -461,5 +469,110 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin: 0%;
+        /* margin-left: 5%; */
+        padding: 0%;
+        width: 100%;
+        background-color: var(--color2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Indie Flower', cursive;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    .mainContainer {
+        z-index: 0;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutMe {
+        scroll-snap-align: start;
+        font-family: 'MuseoModerno', cursive;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: bold;
+        font-size: 2.8rem;
+        animation: randime 5s infinite;
+    }
+
+    @keyframes randime {
+        0%,
+        7% {
+            transform: rotateZ(0);
+        }
+        15% {
+            transform: rotateZ(-105deg);
+        }
+        20% {
+            transform: rotateZ(100deg);
+        }
+        25% {
+            transform: rotateY(-10deg);
+        }
+        30% {
+            transform: rotateY(6deg);
+        }
+        35% {
+            transform: rotateY(-200deg);
+        }
+        50% {
+            color: rgb(151, 220, 127);
+        }
+        60%,
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    .skillUpper {
+        font-size: 1rem;
+    }
+    .sk1,
+    .sk2,
+    .sk3,
+    .sk4,
+    .sk5,
+    .sk6,
+    .sk7 {
+        font-size: 1rem;
+    }
+
+    .projectUpper {
+        font-size: 1rem;
+    }
+    .projectHolderUpper {
+        font-size: 1rem;
+    }
+    .contactUpper {
+        font-size: 1rem;
+    }
+
+    .gmail {
+        font-size: 1rem;
+    }
+
+    .linkedin {
+        font-size: 1rem;
+    }
+
+    .github {
+        font-size: 1rem;
     }
 }
