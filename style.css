@@ -514,30 +514,8 @@ body {
 
     @keyframes randime {
         0%,
-        7% {
-            transform: rotateY(0);
-        }
-        15% {
-            transform: rotateY(-20deg);
-        }
-        20% {
-            transform: rotateY(20deg);
-        }
-        25% {
-            transform: rotateY(-20deg);
-        }
-        30% {
-            transform: rotateY(6deg);
-        }
-        35% {
-            transform: rotateY(-90deg);
-        }
         50% {
             color: rgb(151, 220, 127);
-        }
-        60%,
-        100% {
-            transform: rotateZ(0);
         }
     }
 
